@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="main.css">
+        <title>Lumenix Solution Website</title>
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+
+        <style>
+            header { grid-area: header; }
+            nav { grid-area: nav; }
+            main { grid-area: main; }
+            aside { grid-area: aside; }
+            footer{ grid-area: footer; }
+            
+            .grid-container {
+              display: grid;
+              grid-template-areas:
+                'header header header header header header 
+        header header header header'
+                      'nav nav nav nav nav nav nav nav nav nav'
+                      'main main main main main main main main main main
+        main aside'
+                       'footer footer footer footer footer footer 
+        footer footer footer footer';    
+              gap: 10px;
+              padding: 10px;
+            }
+        </style>
+            
+    </head>
+
+    <body class="grid-container">
+        <header>
+        <img src="Logo.png"
+        class="imageHeader" alt="Lumenix Logo">
+        <nav>
+                <div>
+                <a href="#">Home</a>
+                 <a href="#">About</a>
+                <a href="#">Contact</a>
+                 </div>
+        </nav>
+          
+        <main>
+
+             
+            <section class="hero">
+           <img src="Main-image.png" alt="Professional with laptop" class="hero-img">
+            <div class="hero-text">
+
+      <h1>Innovative Lighting Solutions</h1>
+      <p>Smart lighting technology that enhances your environment while saving energy and reducing costs.</p>
+      <a href="#" class="btn">Learn More</a>
+    </div>
+  </section>
+</main>
+
+
+     <aside>
+
+     <img src="lightbulb-icon.png" alt="Lightbulb icon representing smart ideas">
+         <p>Empowering businesses with smarter lighting and tech solutions.</p>
+     </aside>
+
+        <footer>
+        
+            <p><em>© 2024 Lumenix Solution. All rights reserved.</em></p>
+        </footer>
+    </body>
+</html>
