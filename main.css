@@ -1,0 +1,157 @@
+body {
+  background-color: darkblue;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  color: white;
+  margin: 0;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  position: fixed;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10px;
+}
+
+nav a {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+  padding: 10px 0;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: yellow;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding-left: 80px;
+  margin-bottom: 30px;
+}
+
+.imageHeader {
+  height: 60px;
+}
+
+main {
+  padding-left: 100px;
+  padding-right: 40px;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.hero-img {
+  width: 300px;
+  border-radius: 8px;
+}
+
+.hero-text {
+  max-width: 500px;
+}
+
+.hero-text h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  letter-spacing: 0.05em;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.hero-text p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.1rem;
+  color: lightgray;
+  margin-bottom: 20px;
+}
+
+.btn {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  background-color: yellow;
+  color: darkblue;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: white;
+  color: darkblue;
+}
+
+aside {
+  background-color: lightblue;
+  padding: 20px;
+  border-radius: 8px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 40px;
+}
+
+aside img {
+  width: 80px;
+  margin-bottom: 15px;
+}
+
+footer {
+  background-color: darkblue;
+  color: gray;
+  text-align: center;
+  padding: 15px 0;
+  font-style: italic;
+  font-size: 0.9rem;
+  margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+  nav {
+    position: static;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .hero {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-img {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  main {
+    padding: 20px;
+  }
+
+  aside {
+    margin-top: 30px;
+  }
+}
